@@ -6,7 +6,7 @@
 
 #mongodbAtlasS1{
     text-transform: uppercase;
-    border-left: solid 3px rgba(72, 226, 0, 0.514);
+    border-left: solid 3px #00ED64;
     text-indent: 4px;
     font-size: 12px;
     margin-top: 8%;
@@ -15,11 +15,12 @@
     color: rgba(0, 0, 0, 0.404);
 }
 
-#tituloS1{
+#lovedByDevTituloS1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-left: 4%;
     margin-top: 4%;
-    font-weight: 100;
+    font-weight: 10;
+    font-size: 3rem;
 }
 
 #blocoVectorSearch{
@@ -37,22 +38,24 @@
     margin-bottom: 16px;
 }
 
-#textoS1{
+#textinhoS1{
     margin-left: 4%;
-    width: 600px;
+    width: 580px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 30px;
     color: rgba(0, 0, 0, 0.623);
-    font-size: large;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 4%;
 }
 
-.botoesS1{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
+#breakNaoMobileS1{
+    display: none;
+}
+
+.botoesTryEDeployS1{
+    width: 200px;
     height: 50px;
     margin-left: 4%;
     margin-top: 20px;
@@ -61,7 +64,7 @@
     font-weight: 500;
 }
 
-#tryAtlasFree{
+#tryAtlasFreeBotaoS1{
     background: #00ED64;
     margin-bottom: 20px;
     border-radius: 4px;
@@ -73,4 +76,51 @@
     color: white;
     border-radius: 4px;
     border: solid 1px ;
+}
+
+#divisoriaS1{
+    width: 95%;
+    height: 1px;
+    background: #0000002a;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+.numerosS1{
+    font-size: 24px;
+    color: #00684A;
+    font-weight: 900;
+}
+
+#quarentaENove{
+    margin-left: 20%;
+}
+
+#fotinhaDosGraficosS1{
+    display: none;
+}
+
+@media (min-width: 768px){
+    #lovedByDevTituloS1{
+        font-size: 4rem;
+    }
+    #breakNaoMobileS1{
+        display: flex;
+    }
+    #fotinhaDosGraficosS1{
+        display: flex;
+        position: absolute;
+        left: 60%;
+        width: 410px;
+        bottom: 10%;
+    }
+    #textinhoS1{
+        font-size: 1.3rem;
+        line-height: 35px;
+    }
+    #tryAtlasFreeBotaoS1:hover{
+        border-radius: 24px;
+        cursor: pointer;
+        
+    }
 }
